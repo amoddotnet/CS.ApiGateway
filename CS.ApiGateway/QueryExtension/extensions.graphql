@@ -1,0 +1,8 @@
+﻿extend type CustOrder {
+  productDtl: Book
+  @delegate(schema: "Products", path: "bookById(id: $fields:productId)")
+}
+
+
+
+
